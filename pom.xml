@@ -9,8 +9,8 @@
         <version>2.1.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>br.com.danielpadua</groupId>
-    <artifactId>java-spring-idea-example</artifactId>
+    <groupId>com.synk</groupId>
+    <artifactId>SynkAPI</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>java-spring-idea-example</name>

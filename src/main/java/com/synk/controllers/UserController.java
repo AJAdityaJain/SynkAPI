@@ -1,5 +1,6 @@
-package br.com.danielpadua.java_spring_idea_example.controllers;
+package com.synk.controllers;
 
+import com.synk.models.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api/example")
-public class ExampleController {
+public class UserController {
 
     @GetMapping("/hello-world")
-    public ResponseEntity<String> get() {
-        return ResponseEntity.ok("Hello World!");
+    public ResponseEntity<User> get() {
+        return ResponseEntity.ok(new User());
     }
 
 }

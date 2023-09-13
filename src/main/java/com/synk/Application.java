@@ -1,11 +1,11 @@
-package br.com.danielpadua.java_spring_idea_example;
+package com.synk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExampleApplication {
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(ExampleApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
