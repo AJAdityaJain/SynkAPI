@@ -11,7 +11,7 @@ public class MergeKey {
         keys = new ArrayList<Integer>();
     }
 
-    public void FromString(String str) {
+    public void fromString(String str) {
         this.keys.clear();
         String[] strings = str.split("_");
         for (String item : strings) {
