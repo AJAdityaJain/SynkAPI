@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Session {
     public Date lastUsed;
-    public UID uuid;
+    public UUID uuid;
 
-    public Session(UID uuid) {
+    public Session(UUID uuid) {
         this.lastUsed = new Date();
         this.uuid = uuid;
     }

@@ -1,16 +1,12 @@
 package com.synk.models.data;
 
 public enum ErrorCode {
-    ARG1,
-    ARG2,
-    ARG3,
-    ARG4,
-    ARG5,
-    ARG6,
-    ARG7,
-    ARG8,
+    INVALID_PASSWORD,
+    INVALID_SESSION,
+    INVALID_EMAIL,
     EXISTS,
     NOT_EXISTS,
     UNAUTHORIZED,
-
+    ARGUMENT_NULL,
+    UNKNOWN
 }

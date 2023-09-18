@@ -14,10 +14,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>Synk API</name>
-    <description>Demo project for Spring Boot</description>
+    <description>APIs and Websockets</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.17</java.version>
     </properties>
 
     <dependencies>
@@ -42,6 +42,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>1.5.4</version>
+
+<!--            <classifier>guid-patch</classifier>-->
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -49,8 +61,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
             </plugin>
         </plugins>
     </build>
 
 </project>
+

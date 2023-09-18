@@ -3,7 +3,7 @@ package com.synk.models;
 import org.springframework.lang.Nullable;
 
 public class User {
-    public UID uuid;
+    public UUID uuid;
     public String name;
     public String status;
     public String email;
@@ -13,7 +13,7 @@ public class User {
     @Nullable
     public String pfp;
     public User(){
-        uuid = new UID();
+        uuid = UUID.New;
         name = "";
         status = "";
         email = "";

@@ -11,14 +11,16 @@ public class MergeKey {
         keys = new ArrayList<Integer>();
     }
 
-    public void fromString(String str) {
-        this.keys.clear();
+    public static MergeKey fromString(String str) {
+        MergeKey m = new MergeKey();
+        m.keys.clear();
         String[] strings = str.split("_");
         for (String item : strings) {
             if (!Objects.equals(item, "")) {
-                this.keys.add(Integer.parseInt(item));
+                m.keys.add(Integer.parseInt(item));
             }
         }
+        return m;
     }
 
     public String toString() {

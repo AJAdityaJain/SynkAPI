@@ -7,41 +7,26 @@ public class Error {
     public Error(ErrorCode arg) {
         this.code = arg;
         switch (arg) {
-            case ARG1:
-                this.message = "Argument 1 is invalid";
+            case INVALID_PASSWORD:
+                this.message = "Invalid password. Must be 8 characters";
                 break;
-            case ARG2:
-                this.message = "Argument 2 is invalid";
-                break;
-            case ARG3:
-                this.message = "Argument 3 is invalid";
-                break;
-            case ARG4:
-                this.message = "Argument 4 is invalid";
-                break;
-            case ARG5:
-                this.message = "Argument 5 is invalid";
-                break;
-            case ARG6:
-                this.message = "Argument 6 is invalid";
-                break;
-            case ARG7:
-                this.message = "Argument 7 is invalid";
-                break;
-            case ARG8:
-                this.message = "Argument 8 is invalid";
+            case INVALID_EMAIL:
+                this.message = "Invalid email. Should follow the regular format";
                 break;
             case EXISTS:
-                this.message = "Already exists";
+                this.message = "Already exists. Could not instantiate new";
                 break;
             case NOT_EXISTS:
-                this.message = "Does not exist";
+                this.message = "Does not exist. Could not find";
                 break;
             case UNAUTHORIZED:
                 this.message = "Unauthorized";
                 break;
-            default:
-                this.message = "Unknown error";
+            case INVALID_SESSION:
+                this.message = "Session has expired";
+                break;
+            case UNKNOWN:
+                this.message = "Unknown error occurred";
                 break;
         }
     }
