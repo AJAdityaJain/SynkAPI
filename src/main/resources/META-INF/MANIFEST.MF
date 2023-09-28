@@ -1,3 +1,27 @@
-Manifest-Version: 1.0
+Manifest-Version: 1.1
 Main-Class: com.synk.Application
+Class-Path: springdoc-openapi-starter-webmvc-ui-2.0.0.jar jakarta.xml.bi
+ nd-api-4.0.0.jar spring-core-6.0.2.jar swagger-annotations-jakarta-2.2.
+ 7.jar jsr305-3.0.2.jar tomcat-embed-core-10.1.1.jar swagger-core-jakart
+ a-2.2.7.jar log4j-to-slf4j-2.19.0.jar jakarta.annotation-api-2.1.1.jar 
+ springdoc-openapi-starter-webmvc-api-2.0.0.jar jackson-core-2.14.1.jar 
+ springdoc-openapi-starter-common-2.0.0.jar jackson-module-parameter-nam
+ es-2.14.1.jar slf4j-api-2.0.4.jar spring-expression-6.0.2.jar listenabl
+ efuture-9999.0-empty-to-avoid-conflict-with-guava.jar swagger-models-ja
+ karta-2.2.7.jar spring-aop-6.0.2.jar classgraph-4.8.149.jar jackson-dat
+ abind-2.14.1.jar error_prone_annotations-2.7.1.jar spring-webmvc-6.0.2.
+ jar webjars-locator-core-0.52.jar mysql-connector-j-8.0.31.jar tomcat-e
+ mbed-websocket-10.1.1.jar jul-to-slf4j-2.0.4.jar logback-core-1.4.5.jar
+  jakarta.validation-api-3.0.2.jar jackson-dataformat-yaml-2.14.1.jar sp
+ ring-boot-starter-web-3.0.0.jar guava-31.0.1-jre.jar jackson-datatype-j
+ dk8-2.14.1.jar spring-boot-starter-json-3.0.0.jar micrometer-observatio
+ n-1.10.2.jar logback-classic-1.4.5.jar spring-boot-3.0.0.jar spring-con
+ text-6.0.2.jar spring-web-6.0.2.jar jakarta.activation-api-2.1.0.jar mi
+ crometer-commons-1.10.2.jar log4j-api-2.19.0.jar spring-boot-autoconfig
+ ure-3.0.0.jar spring-jcl-6.0.2.jar failureaccess-1.0.1.jar spring-boot-
+ starter-tomcat-3.0.0.jar checker-qual-3.12.0.jar snakeyaml-1.33.jar tom
+ cat-embed-el-10.1.1.jar swagger-ui-4.15.5.jar Java-WebSocket-1.5.4.jar 
+ jackson-annotations-2.14.1.jar spring-beans-6.0.2.jar commons-lang3-3.1
+ 2.0.jar jackson-datatype-jsr310-2.14.1.jar spring-boot-starter-3.0.0.ja
+ r spring-boot-starter-logging-3.0.0.jar j2objc-annotations-1.3.jar
 

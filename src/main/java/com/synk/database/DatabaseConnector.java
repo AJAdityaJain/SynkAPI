@@ -1,6 +1,7 @@
 package com.synk.database;
 
 import com.synk.models.*;
+import com.synk.models.UUID;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -69,6 +70,34 @@ public class DatabaseConnector {
                 user.publicKey = MergeKey.fromString(rs.getString("publicKey"));
             }
             return user;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+    public User[] getUsers(String uuid) {
+        try {
+            CallableStatement cmd = con.prepareCall("CALL getUsers (?);");
+            cmd.setString(1, uuid);
+            ResultSet rs = cmd.executeQuery();
+            ArrayList<User> users = new ArrayList<>();
+
+
+            while (rs.next()) {
+                User user = new User();
+
+                user.uuid.uid = rs.getString("uuid");
+                user.name = rs.getString("name");
+                user.email = rs.getString("email");
+//                user.hash = rs.getString("hash");
+                user.status = rs.getString("status");
+                user.pfp = rs.getString("pfp");
+//                user.privateKey = rs.getString("privateKey");
+                user.publicKey = MergeKey.fromString(rs.getString("publicKey"));
+
+                users.add(user);
+            }
+            return users.toArray(new User[0]);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -176,6 +205,20 @@ public class DatabaseConnector {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void updateContact(String user,String uuid, String name) {
+        try {
+            CallableStatement cmd = con.prepareCall("CALL updateContact (?,?);");
+            cmd.setString(1, user);
+            cmd.setString(2, uuid);
+            cmd.setString(3, name);
+
+            cmd.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     public void deleteContact(String uuid, String user) {

@@ -1,11 +1,11 @@
 package com.synk.models.data;
 
-public class Request<T> {
+public class Response<T> {
     public T data;
     public boolean success;
     public Error[] errors;
 
-    public Request(ErrorCode... args) {
+    public Response(ErrorCode... args) {
 
         success = false;
         data = null;
@@ -15,7 +15,7 @@ public class Request<T> {
         }
     }
 
-    public Request(T data, boolean success) {
+    public Response(T data, boolean success) {
         this.success = success;
         this.data = data;
         errors = new Error[0];
