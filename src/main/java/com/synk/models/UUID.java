@@ -1,7 +1,6 @@
 package com.synk.models;
 
 public class UUID {
-    public static final UUID New = new UUID("");
     public String uid;
 
     public UUID(){

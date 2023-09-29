@@ -17,7 +17,7 @@ public class Message {
     public Message(UUID subuuid, UUID sender, UUID reciever,String message, String key)
     {
         this.subuuid = subuuid;
-        this.uuid = UUID.New;
+        this.uuid = new UUID();
         this.sender = sender;
         this.reciever = reciever;
         this.message = message;
@@ -30,9 +30,9 @@ public class Message {
     }
     public Message()
     {
-        this.uuid = UUID.New;
-        this.sender = UUID.New;
-        this.reciever = UUID.New;
+        this.uuid = new UUID();
+        this.sender = new UUID();
+        this.reciever = new UUID();
         this.message = "";
         this.key = new MergeKey();
 

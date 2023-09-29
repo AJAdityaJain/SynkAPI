@@ -34,7 +34,7 @@ public class ContactController {
             if (errors.size() > 0)
                 return ResponseEntity.ok(new Response<>(errors.toArray(new ErrorCode[0])));
             else {
-                Application.db.postContact(new Contact(UUID.New, SessionManager.GetSession(id), new UUID(contact), name));
+                Application.db.postContact(new Contact(new UUID(), SessionManager.GetSession(id), new UUID(contact), name));
                 return ResponseEntity.ok(new Response<>(
                         Empty.New,
                         true

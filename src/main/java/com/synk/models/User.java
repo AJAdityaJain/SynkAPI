@@ -13,7 +13,7 @@ public class User {
     @Nullable
     public String pfp;
     public User(){
-        uuid = UUID.New;
+        uuid = new UUID();
         name = "";
         status = "";
         email = "";
